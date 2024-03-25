@@ -1,0 +1,166 @@
+@charset "UTF-8";
+
+/* =========== 메인(대시보드) =========== */
+.radius_box {
+	background: #fff;
+	padding: 2rem;
+	border-radius: 2rem;
+	box-shadow: 0 2px 10px rgba(0,0,0,.1);
+}
+#dashboard ul,
+#dashboard ol,
+#dashboard li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#dashboard {
+	padding: 5rem 0;
+	position: relative;
+}
+#dashboard > * {
+	position: relative;
+}
+#dashboard > .title02:first-of-type {
+	color: #fff;
+	line-height: 1.3;
+	word-break: keep-all;
+}
+#dashboard::before {
+	content: '';
+	display: block;
+	width: 1000px;
+	height: 500px;
+	background: var(--primary-color);
+	border-radius: 50%;
+	position: absolute;
+	top: -250px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 0;
+}
+#lastWeekAverage {
+	margin-top: 3rem;
+}
+#lastWeekAverage .average_list {
+	display: flex;
+	justify-content: space-between;
+	gap: 1rem;
+	margin-top: 1.5rem;
+}
+#lastWeekAverage .average_list > li {
+	width: calc((100% / 3) - (2rem / 3));
+	flex: 1;
+	padding: 2rem 1rem;
+	background: #fff;
+	border: 1px solid var(--primary-color);
+	border-radius: 1.2rem;
+	text-align: center;
+}
+#lastWeekAverage .average_list .icon_box {
+	width: 4rem;
+	height: 4rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	margin: 0 auto 1rem;
+	border-radius: 50%;
+	background: #25C0CB;
+}
+#lastWeekAverage .average_list .icon_box.fire {
+	background: #FF7575;
+}
+#lastWeekAverage .average_list .icon_box.eat {
+	background: #FFD632;
+}
+#lastWeekAverage .average_list .txt03 {
+	color: #666;
+	line-height: 1.2;
+}
+#lastWeekAverage .average_list .txt02_bold {
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+#lastWeekAverage .average_list .danwi {
+	font-size: 0.8em;
+	line-height: 1;
+}
+#lastWeekCompare {
+	margin: 5rem -5rem 0;
+}
+#lastWeekCompare .txt03_bold {
+	text-align: center;
+}
+#lastWeekCompare .chart_list > li {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#lastWeekCompare .chart_list .txt03 {
+	position: relative;
+	top: 20px;
+}
+#lastWeekCompare .chart_swp {
+	width: 100%;
+	overflow: hidden;
+	margin-top: 1.5rem;
+}
+#lastWeekCompare .chart_swp .swiper-slide {
+	margin: 1rem 0;
+	padding: 1rem;
+}
+#lastWeekCompare .chart_swp .chart_pg {
+	display: flex;
+	justify-content: center;
+}
+#lastWeekCompare .chart_swp .swiper-pagination-bullet {
+	width: auto;
+	height: auto;
+	font-size: 14px;
+	font-weight: 400;
+	color: #666;
+	line-height: 1;
+	padding: 0.5rem 1rem;
+	border-radius: 100px;
+	border: 2px solid var(--primary-color);
+	background: transparent;
+	opacity: 1;
+}
+#lastWeekCompare .chart_swp .swiper-pagination-bullet-active {
+	background: var(--primary-color);
+	color: #fff;
+	font-weight: bold;
+}
+#myGoal {
+	margin: 5rem auto 0;
+}
+
+@media screen and (max-width: 400px){
+	#lastWeekAverage .average_list {
+		flex-direction: column;
+	}
+	#lastWeekAverage .average_list > li {
+		width: 100%;
+		padding: 1.5rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	#lastWeekAverage .average_list .icon_box {
+		margin: 0;
+	}
+	#lastWeekAverage .average_list .txt_box {
+		width: calc(100% - 100px);
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		gap: 5px;
+	}
+	#lastWeekAverage .average_list .txt_box .txt02_bold {
+		width: auto;
+	}
+}

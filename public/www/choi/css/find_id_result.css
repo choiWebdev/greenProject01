@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+/* =========== 아이디/비번찾기 =========== */
+#find .find_result {
+    margin: 3rem auto;
+    padding: 2rem;
+    text-align: center;
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+#find .find_result .txt03_bold {
+    color: #999;
+}

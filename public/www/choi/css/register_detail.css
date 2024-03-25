@@ -1,0 +1,12 @@
+/* =========== 회원가입_세부정보 =========== */
+.register_detail .title02 {
+    margin-bottom: 3rem;
+}
+.register_detail .ipt_box {
+    align-items: center;
+}
+.register_detail .detail_txt {
+    width: 50px;
+    padding-left: 1rem;
+    font-size: 1.2em;
+}

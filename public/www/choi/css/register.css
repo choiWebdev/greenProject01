@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+/* =========== 회원가입 =========== */
+#register_wrap {
+	margin-top: 5rem;
+}
+.id_check {
+	position: absolute; 
+	top: 50%; 
+	right: 1.5rem;
+	transform: translateY(-50%);
+	font-size: 1.3rem;
+	color: #fff;
+	display: inline-block;
+	padding: 0.5rem 1rem;
+	border: none;
+	border-radius: 100px;
+	background: var(--primary-color);
+}
+.privacy_ctt {
+	width: 100%;
+	height: 140px;
+	padding: 0.5rem;
+	font-size: 1.4rem;
+	color: #666;
+	line-height: 1.6;
+	border-radius: 8px;
+	border: 1px solid #ddd;
+	background: #f7f7f7;
+}
+.privacy_scr {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    overflow-y: auto;
+}
+.privacy_scr::-webkit-scrollbar {
+    padding: 1px;
+    width: 5px;
+}
+.privacy_scr::-webkit-scrollbar-thumb {
+	width: 3px;
+	border-radius: 3px;
+	background: #aaa;
+}
+.privacy_ctt .privacy_tit {
+	margin-bottom: 1rem;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+.privacy_chk_wrap {
+	position: relative;
+	margin-top: 1rem;
+}
+.privacy_chk_wrap input[type="checkbox"] {
+	appearance : none;
+	width: 1px;
+	height: 1px;
+	border: 1px solid transparent !important;
+	background: transparent !important;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.privacy_chk_wrap label {
+	display: block;
+	padding-left: 2rem;
+	cursor: pointer;
+	font-size: 14px;
+	color: #666;
+	position: relative;
+}
+.privacy_chk_wrap label::before {
+	content: '';
+	display: block;
+	width: 1.4rem;
+	height: 1.4rem;
+	border: 1px solid #eee;
+	border-radius: 3px;
+	position: absolute;
+	top: 4px;
+	left: 0;
+}
+.privacy_chk_wrap input[type="checkbox"]:checked + label::before {
+	background: url(../img/ipt_chk.svg) no-repeat center/cover;
+	border-color: var(--primary-color);
+}
+#register_wrap .btn_wrap {
+    margin-top: 3rem;
+}
+.p_txt {
+    width: calc(100% - 3rem);
+    margin-bottom: 1rem;
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--primary-color);
+    word-break: keep-all;
+	display: none;
+}
+.np_txt {
+    width: calc(100% - 3rem);
+    margin-bottom: 1rem;
+    font-size: 14px;
+    font-weight: 300;
+    color: #FF7575;
+    word-break: keep-all;
+	display: none;
+}

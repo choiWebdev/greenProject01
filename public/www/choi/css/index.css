@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+/* =========== 로그인 =========== */
+/* 로고 */
+#logo {
+    max-width: 210px;
+    margin: 0 auto 10px;
+    padding-top: 100px;
+}
+#logo img {
+    display: block;
+    max-width: 100%;
+}
+/* 로그인 박스 */
+.join {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.join a {
+    font-size: 1.4rem;
+    color: #999;
+    text-decoration: none;
+}
+.join a:hover {
+    color: #777;
+}
+.sns_login {
+    border-top: 1px solid #ddd;
+    margin-top: 1rem;
+    padding: 3rem 0;
+    text-align: center;
+}
+.sns_login .title {
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: #999;
+    margin-bottom: 1rem;
+}
