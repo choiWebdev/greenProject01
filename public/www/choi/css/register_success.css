@@ -1,0 +1,15 @@
+.register_success {
+    margin-top: 3rem;
+}
+.register_success .btn_wrap {
+    margin-top: 3rem;
+}
+.register_success .logo {
+    width: 50%;
+    max-width: 300px;
+    margin: 0 auto 3rem;
+}
+.register_success .logo img {
+    display: block;
+    max-width: 100%;
+}

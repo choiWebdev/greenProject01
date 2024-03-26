@@ -1,4 +1,7 @@
 /* =========== 회원가입_세부정보 =========== */
+.register_detail {
+    margin-top: 3rem;
+}
 .register_detail .title02 {
     margin-bottom: 3rem;
 }

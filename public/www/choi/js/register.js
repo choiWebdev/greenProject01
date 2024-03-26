@@ -113,8 +113,8 @@ function fnCheckNickname () {
         for (let i = 0; i < alreadyUsedNickname.length; i++) {
             // 중복된 아이디 있을 때
             if (alreadyUsedNickname[i] === checkNickname.value) {
-                document.getElementsByClassName('ipt_box')[6].classList.remove('pass');
-                document.getElementsByClassName('ipt_box')[6].classList.add('nonepass');
+                document.getElementsByClassName('ipt_box')[5].classList.remove('pass');
+                document.getElementsByClassName('ipt_box')[5].classList.add('nonepass');
                 document.getElementsByClassName('forNickname')[0].style.display = 'none';
                 document.getElementsByClassName('forNickname')[1].style.display = 'block';
                 checkNickname.focus();
@@ -122,8 +122,8 @@ function fnCheckNickname () {
                 return false;
             // 중복된 아이디 없을 때
             } else {
-                document.getElementsByClassName('ipt_box')[6].classList.add('pass');
-                document.getElementsByClassName('ipt_box')[6].classList.remove('nonepass');
+                document.getElementsByClassName('ipt_box')[5].classList.add('pass');
+                document.getElementsByClassName('ipt_box')[5].classList.remove('nonepass');
                 document.getElementsByClassName('forNickname')[0].style.display = 'block';
                 document.getElementsByClassName('forNickname')[1].style.display = 'none';
                 nicknameCheckComplete = true;
@@ -232,7 +232,7 @@ function fnCheckRegister(){
         if(!sureConfirm) {
             return false;
         } else {
-            window.location.href = 'register_success.html';
+            window.location.href = 'register_detail.html';
         }
     }
     

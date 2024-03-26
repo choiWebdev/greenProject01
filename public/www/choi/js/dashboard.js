@@ -1,22 +1,7 @@
-
-window.onload = function() {
-    // 지난주 데이터 비교 슬라이드
-    var Swiper = new Swiper('.chart_swp', {
-        spaceBetween: 20,
-        slidesPerView: 1.3,
-        centeredSlides: true,
-        pagination: {
-            el: '.chart_pg',
-            clickable: true,
-            renderBullet: function (index, className) {
-                if(index === 0) return '<span class="' + className + '">' + '운동량' + '</span>';
-                if(index === 1) return '<span class="' + className + '">' + '소모 칼로리' + '</span>';
-                if(index === 2) return '<span class="' + className + '">' + '섭취 칼로리' + '</span>';
-            },
-        },
-    });
+document.addEventListener("DOMContentLoaded", function(){
     // 대시보드에서는 body 배경색 바꾸기
     document.getElementsByTagName('body')[0].style.background = '#f7f7f7';
+    
 
     // 운동량 차트 데이터
     const data1 = {
@@ -134,4 +119,16 @@ window.onload = function() {
         data: data3,
         options: options3
     });
+});
+
+// 운동목표 모달 열기
+function fnOpenModal(){
+    document.getElementById('modal_bg').style.display = 'block';
+    document.getElementById('goalModal').style.display = 'block';
+}
+
+// 운동목표 모달 닫기
+function fnCloseModal(){
+    document.getElementById('modal_bg').style.display = 'none';
+    document.getElementById('goalModal').style.display = 'none';
 }
